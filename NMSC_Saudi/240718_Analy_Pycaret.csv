@@ -1,0 +1,154 @@
+﻿S_NO,MRN,DETECTION,CANCER_TYPE,SEX,DETECTION_AGE,FU_month,EYE_ODOS,LESION_LOCATION,MEDIAL_CENTRAL_LATERAL,LACRIMAL_INVOLVMENT,LESIONDIAMETER1,DIAMETER2,Thickness,RECONSTRUCTIVE_SX,Adjunctive_procedure_Sx_comment,HISTOPATHOLOGIC_SUBTYPE,Lymoh_node,distant_metastasis,metastesis_at_diagnosis,metastesis_fu,RECURRENCE,time_to_recurrence,Any Complication,NEED_FOR_REVISION,frozen_biopsy,tumor_resected_margin,T_size_category,T2_size,stage,co-current cancer
+2,16627859,2005,SCC,F,62,23.7,L,L,lateral,None,.5,.5,.0,DIRECT CLOSURE,Debulking mass excision,moderately differentiated cells,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+3,17140929,2005,SCC,F,66,35.4,R,U,medial,None,.9,.4,.0,Curtler-Beard, ,moderately differentiated cells,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+4,10831819,2007,SCC,F,79,22.2,R,U,lateral,None,1.0,.5,.3,TENZEL SEMICIRCULAR FLAP, ,moderately differentiated cells,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+6,17748017,2007,SCC,M,54,.2,L,U,both eyelid,None,.0,,.0,Exenteration,(subtotal),moderately differentiated cells,None,None,None,None,None,.00,2,None,none,none,<5,<10,3A,None
+7,18251922,2007,SCC,F,57,189.6,R,U,lateral,None,.8,.5,.0,sliding tarsoconjunctival flap, ,well differentiated cells,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+8,8926559,2008,SCC,F,87,7.4,R,U,lateral,None,.7,.6,.3,sliding tarsoconjunctival flap,modified tersoconjunctival flap,moderately differentiated cells,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+9,18933440,2008,SCC,F,54,62.6,L,L,lateral,None,.7,.5,.0,DIRECT CLOSURE, ,Sebaceous hyperplasia,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+11,21477103,2009,SCC,M,60,134.8,R,U,medial,None,1.4,1.1,.1,sliding tarsoconjunctival flap, ,microinvasive,None,None,None,None,None,.00,2,None,positive margin,none,>10,11 -- 20,1C,None
+12,22670073,2010,SCC,F,50,69.7,R,L,lateral,None,1.0,.8,.0,Hughes',Modified Hughes,well differentiated cells,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+14,20884016,2010,SCC,F,87,2.0,L,L,lateral,None,2.5,1.5,.0,DIRECT CLOSURE, ,Basosquamous cell carcinoma+ Pancytokeratin,None,None,None,None,Yes,11.90,2,None,none,none,>20,20 -- 30,S2,cholangiocarcinoma
+15,11890547,2010,SCC,F,90,2.1,L,L. CANTHUS,lateral,None,1.8,.5,.0,sliding tarsoconjunctival flap,tarso-conjunctival flap & lateral periosteal flap suture (OS),well differentiated cells,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+16,19606576,2010,SCC,M,58,154.7,R,U,lateral,None,2.3,1.5,.6,Curtler-Beard,Curtler-Beard procedure with SureDerm (1X4 cm) tarsus (OD)_Mucosal plugging (OS),moderately differentiated cells,None,None,None,None,None,.00,1,1,positive margin,resected margin involvement; present,>20,20 -- 30,S2,None
+17,25475700,2012,SCC,F,79,110.4,L,U,medial,None,1.3,.8,.5,Exenteration,(total),moderately differentiated cells,LN metas,None,lymph nodes,None,None,.00,2,None,none,none,>10,11 -- 20,3B,None
+18,25210394,2012,SCC,F,63,123.1,L,U,central,None,1.6,1.1,.1,Reverse Hughes',Modified reversed Hughes',moderately differentiated cells,None,None,None,None,None,.00,1,None,none,none,>10,11 -- 20,1C,None
+19,26033605,2013,SCC,F,67,20.6,L,M. CANTHUS,medial,None,1.5,1.5,.5,Exenteration, ,poorly differentiated,None,None,local lymphatic invasion_ lacrimal sac,None,None,.00,2,None,none,none,>10,11 -- 20,3A,None
+21,23766633,2013,SCC,F,69,73.8,L,L,medial,punctum involved,1.0,.7,.0,TENZEL SEMICIRCULAR FLAP, ,poorly differentiated,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+24,15483600,2014,SCC,F,71,57.1,R,L,medial,None,.7,.6,.1,DIRECT CLOSURE, ,moderately differentiated cells,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,aDVANCED GASTRIC CANCER
+25,27299890,2014,BCC,F,79,2.8,L,L,central,None,1.2,.7,.6,Hughes', ,Basal cell carcinoma with adnexal differentiation,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+26,19118687,2016,SCC,F,61,74.6,L,U,lateral,None,.4,.3,.4,sliding tarsoconjunctival flap, ,moderately differentiated cells,None,Lt parotid space,Lt parotid space,None,None,.00,2,None,none,none,<5,<10,4,None
+27,31562113,2018,BCC,M,69,24.0,L,M. CANTHUS,medial,None,3.7,2.9,.0,Exenteration,(total),Basal cell carcinoma,None,None,INTRAORBITAL_cornea involved,None,None,.00,2,None,none,resected margin involvement; present,>20,30 -- 40,3A,None
+30,33800671,2019,SCC,F,69,30.1,R,L. CANTHUS,-99,None,1.3,.6,.3,Curtler-Beard,modified extended Curtler-Beard flap reconstruction,moderately differentiated cells,None,None,None,None,None,.00,1,None,none,none,>10,11 -- 20,1C,None
+31,33673096,2019,SCC,F,79,37.6,R,L. CANTHUS,central/lateral,None,2.3,.4,.0,Reverse Hughes',Lateral canthya periosteal flap conneted with lower lid tarsus _ Modified reverse Hughes',Squamous cell carcinoma in situ,None,None,None,None,None,.00,2,None,none,none,>20,20 -- 30,S2,None
+34,9300788,2021,SCC,M,72,19.6,R,U,central,None,.6,.5,.0,DIRECT CLOSURE,(superfecial Ex),well differentiated cells,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,adenocarcioma lung ca
+35,36387491,2021,SGC,M,45,13.8,L,U,lateral,None,1.1,.8,.5,TENZEL SEMICIRCULAR FLAP, ,SGC,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+36,15766428,2004,BCC,F,88,3.1,R,L,central,None,.6,.5,.0,TENZEL SEMICIRCULAR FLAP, ,Trichoepithelioma,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+38,16208771,2004,BCC,F,81,.2,R,L,central,None,1.5,.6,.6,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+40,16429119,2005,BCC,F,70,14.6,L,L,lateral,None,.8,.8,.2,periosteum apposition+post. lamella reconstruction c surederm, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+41,16904494,2005,BCC,F,70,10.3,L,L,lateral,None,.6,.4,.1,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+42,4185217,2006,BCC,F,56,137.2,R,L,medial,None,.5,.3,.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+46,18053908,2006,BCC,M,64,180.2,L,U,both eyelid,None,4.0,1.0,2.0,Exenteration, , ,None,None,conj/ sclera,None,None,.00,2,None,none,none,>20,30 -- 40,3A,None
+47,18484737,2007,BCC,M,52,7.3,L,M. CANTHUS,medial,None,.3,.3,.1,Glabellar flap,Median glabellar flap, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+48,18415220,2007,BCC,F,84,.3,L,L,lateral,None,.5,.5,.0,DIRECT CLOSURE, ,keratotic variant,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+50,19130485,2008,BCC,F,71,19.2,L,L,medial,None,.9,.5,.2,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+51,18906380,2008,BCC,F,75,12.2,L,U,lateral,None,.8,.5,.5,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+52,4203137,2008,BCC,M,66,57.6,L,L,lateral,None,.5,.4,.1,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+53,21439862,2009,BCC,F,85,15.0,R,L,central to lateral,None,1.3,.6,.5,Hughes',Extensive modified Hughes, ,None,None,None,None,None,.00,1,None,none,none,>10,11 -- 20,1C,None
+55,21852891,2009,BCC,F,76,1.7,L,U,lateral,None,.8,.7,.2,sliding tarsoconjunctival flap, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+56,19735421,2009,BCC,F,79,44.9,R,L,central,None,1.0,.6,.2,Hughes', , ,None,None,None,None,Yes,44.20,1,None,none,none,>5,<10,1B,None
+57,14893874,2009,BCC,F,72,4.3,R,L,medial,None,.7,.5,.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+58,5781841,2009,BCC,F,60,18.3,R,L,central,None,.7,.5,.0,DIRECT CLOSURE, ,Adenoid basal cell carcinoma,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+59,21986703,2009,BCC,F,75,158.3,R,L,central,None,1.7,1.3,.7,Hughes',Modified Hughes,adenoid basal cell carcinoma,None,None,None,None,Yes,23.40,2,None,none,none,>10,11 -- 20,1C,None
+60,22285811,2010,BCC,F,85,5.1,L,L,medial,None,.6,.5,.1,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+61,22545024,2010,BCC,F,52,102.4,L,L,lateral,None,.3,.2,.2,Hughes',Modified Hughes, ,None,None,None,None,None,.00,1,None,none,resected margin involvement; present,<5,<10,1A,None
+62,22486143,2010,BCC,M,76,63.8,R,M. CANTHUS,medial,None,.4,.3,.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+63,12935670,2010,BCC,M,71,9.8,R,L,central,None,.6,.3,.2,DIRECT CLOSURE, , ,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+64,12877728,2010,BCC,F,56,150.2,R,L,central,None,.3,.2,.1,Hughes',Modified Hughes, ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+65,24062045,2011,BCC,M,58,49.9,R,L,central,None,.6,.4,.2,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+66,24546684,2011,BCC,F,63,31.8,L,L,central,None,.0,.0,.0,DIRECT CLOSURE, ,a) Focal trichogenic proliferation. b) Solar elastosis.,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+68,23575743,2011,BCC,F,72,2.0,R,L,medial,punctum involved?,.4,.3,.2,Hughes',Modified Hughes, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+69,23706314,2011,BCC,F,74,6.7,R,L,medial,punctum involved,.8,.4,.4,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+71,24916936,2012,BCC,F,54,130.9,L,L,lateral,None,.3,.2,.0,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+72,25828902,2012,BCC,F,60,53.4,L,L. CANTHUS,lateral,None,.6,.5,.2,Hughes',Modified reverse Hughes' procedure + Lateral direct closure, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+73,24616090,2012,BCC,M,59,79.2,R,M. CANTHUS,medial,punctum involved,.8,.4,.2,sliding tarsoconjunctival flap,lateral cantholysis + Modified sliding flap suture, ,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+74,25090812,2012,BCC,F,67,15.0,R,M. CANTHUS,medial,None,.2,.2,.1,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+75,24791715,2012,BCC,F,83,9.5,R,L,central,None,.0,.0,.0,DIRECT CLOSURE,Direct clisure + EndoDCR + STI, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+76,26939013,2013,BCC,F,90,6.2,L,U,lateral,None,1.2,.5,.4,sliding tarsoconjunctival flap, , ,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+77,26427726,2013,BCC,F,61,109.6,R,L,central,None,.7,.7,.2,Hughes',Modified Hughes, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+78,10336470,2014,BCC,M,84,37.6,L,L,medial,None,.6,.4,.3,adjacent musculocutaneous flap, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+79,27918802,2014,BCC,F,77,31.8,R,L,central,None,.4,.3,.3,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+80,22351574,2014,BCC,M,72,39.3,R,L,medial,None,.0,.0,.0,adjacent musculocutaneous flap, , ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+81,20495326,2014,BCC,F,63,69.2,L,U,central,None,.0,.0,.0,Reverse Hughes',Modified reversed Hughes', ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+82,28008192,2014,BCC,M,60,65.7,L,L,central,None,.0,,.0,Hughes', ,basaloid and squamoid differentiation,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+83,28195095,2015,BCC,F,83,3.3,R,L,central,None,.7,.5,.3,Hughes',Modified Hughes', ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+85,29270695,2016,BCC,M,66,28.1,R,L,central,None,.4,.3,.1,Hughes',Modified Hughes', ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+86,29271520,2016,BCC,F,82,2.5,R,L,central,None,.6,.5,.3,Hughes',Modified Hughes', ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+87,30482614,2016,BCC,F,83,14.5,R,U,central,None,.2,.2,.2,TENZEL SEMICIRCULAR FLAP,Modified Tenzel musculocutaneous flap, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+88,30017724,2016,BCC,F,60,20.4,L,L,central,None,.0,.0,.0,DIRECT CLOSURE,with lateral cantholysis, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+89,29691641,2016,BCC,M,82,.5,R,L,central,None,2.8,1.7,1.2,"tarsoconjunctival flap, periosteal flap, cheek rotational advancement flap coverage with tasorrhaphy", , ,None,None,None,None,None,.00,2,None,none,none,>20,20 -- 30,S2,None
+90,29394043,2016,BCC,M,74,51.2,L,L,central,None,.3,.3,.1,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+91,29774281,2016,BCC,F,83,50.2,R,L,central,None,.7,.4,.2,Hughes',Modified Hughes', ,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+92,29868573,2016,BCC,M,63,69.3,R,U,lateral,None,.4,.3,.3,DIRECT CLOSURE, ,basosquamous variant,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+93,3187262,2017,BCC,F,84,13.0,L,U,lateral,None,.6,.5,.2,sliding tarsoconjunctival flap,Modified Sliding tarsoconjunctival flap, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+94,31294442,2017,BCC,M,60,57.8,R,L,medial,None,.5,.3,.3,TENZEL SEMICIRCULAR FLAP,Modified Tenzel semi-circular flap, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+95,31516774,2017,BCC,F,46,48.6,R,L,central,None,.1,.1,.1,DIRECT CLOSURE, , ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+96,30868713,2017,BCC,M,52,54.9,L,L,lateral,None,.3,.3,.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+97,29928994,2017,BCC,F,72,58.3,L,L,central,None,.1,.1,.0,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+98,14088834,2017,BCC,M,77,32.9,L,L,medial,None,.8,.4,.1,adjacent musculocutaneous flap,musculocutaneous flap reconstruction + removed remained skin graft, ,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+99,18882823,2017,BCC,F,81,47.6,R,U,central,None,.6,.5,.3,Reverse Hughes',Modified reversed Hughes', ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+104,31752554,2018,BCC,F,67,57.5,L,L,medial,None,1.1,.3,.5,Hughes',Modified Hughes', ,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+105,32714256,2018,BCC,M,71,6.5,R,L,medial,None,.7,.5,.2,adjacent musculocutaneous flap,Modified adjacent cutaneou-muscular flap suture fixative reconstruction, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+106,32075600,2018,BCC,M,81,1.3,L,U,central,None,.3,.2,.2,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+107,23802511,2018,BCC,F,69,19.8,R,U,lateral,None,1.1,.5,.1,sliding tarsoconjunctival flap,Tarso-conjunctival pedicle Reconstruction, ,None,None,None,None,None,.00,1,None,positive margin,none,>10,11 -- 20,1C,None
+108,32121356,2018,BCC,F,77,56.5,R,L,medial,None,.3,.2,.2,Hughes',Modified Hughes', ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+110,14604710,2019,BCC,F,69,61.2,L,L,medial,punctum involved,.8,.3,.0,TENZEL SEMICIRCULAR FLAP,LL & med. canthal reconstruction using Tenzel rotational flap & periosteal flap + lacrimal reconstruction using conventional STI + SEP & SGI, ,None,None,None,None,Yes,16.90,2,None,none,none,>5,<10,1B,None
+112,18162949,2019,BCC,M,78,3.9,R,L,central,None,.0,.0,.0,Hughes',Modified Hughes', ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+113,34160611,2019,BCC,M,67,2.8,L,U,lateral,None,.0,.0,.0,DIRECT CLOSURE (Superfecial), ,Seborrheic keratosis Actinic keratosis,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+114,32936541,2019,BCC,F,72,3.5,L,L. CANTHUS,lateral,None,.8,.6,.3,sliding tarsoconjunctival flap,Tarso-conjunctival flap + Adjacent musculo-cutaneous flap reconsruction, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+115,31490742,2019,BCC,F,71,14.9,L,L,lateral,None,.3,.1,.1,Modified lateral orbital rim periosteal flap procedure, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+116,34008821,2019,BCC,M,75,15.4,L,U,lateral,None,.3,.3,.2,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+117,33354791,2019,BCC,F,74,21.9,L,L,lateral,None,.0,.0,.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+118,17491610,2020,BCC,F,80,10.0,R,M. CANTHUS,medial,None,3.3,2.2,1.2,Exenteration, , ,None,None,INTRAORBITAL,None,None,.00,2,None,none,none,>20,30 -- 40,3A,None
+119,31219294,2020,BCC,F,87,1.0,R,L,central to medial,None,.0,,.0,DIRECT CLOSURE,Extensive Direct closure,"Basaloid malignancy, differential diagnosis of sebaceous carcinoma and less-likely basal cell carcinoma",None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+123,34545484,2020,BCC,F,61,3.2,L,L,central,None,.5,.1,.1,DIRECT CLOSURE,with lateral cantholysis, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+124,35546394,2021,BCC,M,77,2.5,R,L,medial,None,.5,.3,.2,Hughes',Modified Hughes', ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+126,22539896,2021,BCC,F,67,9.2,R,L,central,None,.4,.3,.2,DIRECT CLOSURE (Superfecial), , ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+127,35375870,2021,BCC,F,75,8.1,L,M. CANTHUS,medial,None,.9,.6,.2,Glabellar flap, , ,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+128,35398344,2021,BCC,F,65,15.5,L,L,central,None,.3,.2,.2,Hughes',Modified Hughes', ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+130,36365511,2021,BCC,M,56,14.5,L,L,central,None,.0,.0,.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+131,36498516,2021,BCC,F,71,6.9,R,U,central,None,.4,.1,.2,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+134,2033216,2021,BCC,M,85,19.8,R,L,lateral,None,.7,.4,.2,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+135,17454690,2007,SGC,M,70,121.5,R,U,central,None,2.0,.8,.7,Curtler-Beard, ,moderately differentiated,None,None,None,None,None,.00,2,None,none,none,>20,20 -- 30,S2,None
+136,18460717,2007,SGC,F,89,60.9,R,U,central,None,2.2,1.4,.8,Curtler-Beard, ,Poorly differentiated carcinoma,LN metas,None,None,preauricular & submandibular LN,Yes,23.90,2,None,none,none,>20,20 -- 30,3B,None
+137,17776791,2007,SGC,F,60,.0,L,U,medial,None,.0,,.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+138,23056061,2010,SGC,M,58,51.0,L,U,central,None,.1,.1,.0,Reverse Hughes',Modified reversed Hughes', ,None,None,None,None,None,.00,1,None,none,none,<5,<10,1A,None
+140,22853873,2010,SGC,F,86,89.1,R,L,lateral,None,.0,,.0,sliding tarsoconjunctival flap, , ,None,lung,?,lung,Yes,89.10,2,None,none,none,<5,<10,4,None
+141,20478226,2011,SGC,F,78,84.5,R,L. CANTHUS,lateral,None,.6,.5,.6,Hughes',Modified Hughes OP. + Periosteal flap + Skin-muscle rotatioanl flap, ,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+142,23799530,2011,SGC,M,44,109.3,L,L,central,None,.6,.5,.3,TENZEL SEMICIRCULAR FLAP, , ,LN metas,None,None,"Direct invasion of left bony orbit floor and anterior wall of maxillary sinus, with bony erosion_LN??",Yes,89.40,2,None,atypical cells,none,>5,<10,3B,None
+143,16115547,2012,SGC,M,62,131.9,L,U,central,None,.1,.1,.1,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+146,26362784,2013,SGC,F,49,87.3,L,L,central,None,.2,.2,.2,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,1,None,atypical cells,none,<5,<10,1A,None
+147,27770924,2014,SGC,F,71,70.6,R,L,central,None,.8,.6,.0,Hughes', , ,None,None,None,None,None,.00,1,None,positive margin,none,>5,<10,1B,None
+148,26540625,2014,SGC,F,29,110.0,R,U,central,None,.3,.2,.2,Reverse Hughes',Modified reversed Hughes', ,None,Rt parotid gland,None,Rt parotid gland,None,.00,1,None,positive margin,none,<5,<10,4,None
+149,27691802,2014,SGC,M,63,69.6,L,U,brow,None,.0,.0,.0,DIRECT CLOSURE (Superfecial),brow benign mass(x2) removal, ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+150,23946073,2015,SGC,M,66,82.2,R,U,medial,None,.6,.2,.0,DIRECT CLOSURE, , ,None,None,None,None,Yes,16.90,2,None,positive margin,none,>5,<10,1B,Extranodal NK/T-cell lymphoma
+151,28482585,2015,SGC,F,51,82.9,L,U,medial,None,.5,.4,.3,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+153,10706866,2015,SGC,F,70,97.3,R,L,central,None,2.1,.7,.5,Hughes',Modified Hughes, ,None,None,None,None,Yes,3.70,1,None,positive margin,none,>20,20 -- 30,S2,None
+154,23422735,2015,SGC,F,61,56.6,L,U,medial,None,.8,.2,.8,TENZEL SEMICIRCULAR FLAP, ,Poorly differentiated carcinoma,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+155,28430945,2015,SGC,F,82,84.2,L,L,central,None,1.3,.6,.5,Hughes',Modified Hughes,Malignant adnexal carcinoma with dominantly basaloid differentiation and partly sebaceous differentiation,None,None,None,None,None,.00,1,None,none,none,>10,11 -- 20,1C,None
+156,6195713,2016,SGC,M,76,83.7,R,U,lateral,None,.4,.3,.3,sliding tarsoconjunctival flap,"Tarsoconjunctival sliding flap (OD) , Lateral 1/3 lesion and lateral canthal area removal", ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+157,28537032,2016,SGC,M,54,46.1,L,U,central,None,.0,,.0,Curtler-Beard, , ,LN metas,lung and kidney,None,None,Yes,14.10,1,None,none,none,<5,<10,4,None
+158,28915946,2016,SGC,M,57,7.8,L,L,medial,None,2.0,1.3,1.3,Hughes',Modified Hughes,Sebaceous carcinoma with squamous differentiation,None,None,None,None,Yes,5.70,2,None,positive margin,none,>20,20 -- 30,S2,None
+159,30303224,2016,SGC,F,64,71.8,L,U,central,None,.2,.2,.2,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+161,28237945,2016,SGC,F,73,13.9,L,U,central,None,.8,.7,.2,Reverse Hughes',Modified reverse Hughes'+ Modified Tenzel, ,None,None,None,None,None,.00,2,None,positive margin,none,>5,<10,1B,None
+162,30596313,2017,SGC,M,79,3.2,R,L,medial,punctum involved,.6,.3,.5,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+163,28964083,2017,SGC,F,49,79.2,R,U,central,None,.5,.3,.3,Reverse Hughes',Modified reversed Hughes', ,None,None,None,None,Yes,15.70,2,None,none,none,<5,<10,1A,None
+164,31318773,2017,SGC,M,71,7.9,R,U,U,None,.0,,.0,Exenteration,(subtotal), ,None,None,INTRAORBITAL _tumor attached to inferior rectus muscle and surrounding conj_ No definite involvement of the bony orbit,None,None,.00,2,None,none,none,<5,<10,3A,None
+165,8583787,2017,SGC,M,65,61.5,R,L,lateral,None,.4,.3,1.0,DIRECT CLOSURE, , ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+166,30649711,2017,SGC,F,60,63.8,R,U,central,None,.6,.5,.2,Reverse Hughes',Reverse Hughes', ,None,None,None,None,None,.00,2,None,positive margin,none,>5,<10,1B,None
+167,30758271,2017,SGC,F,71,60.1,L,U,U,None,.0,,.0,Exenteration,(subtotal), ,None,None,None,None,None,.00,2,None,none,none,<5,<10,3A,None
+168,7610226,2018,SGC,F,70,43.5,L,U,central,None,.4,.2,.1,Reverse Hughes',Reverse Hughes', ,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+171,12864416,2018,SGC,F,77,61.0,L,U,central,None,1.7,.6,.4,Reverse Hughes',Modified reversed Hughes', ,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+172,33424902,2019,SGC,F,70,41.7,L,U,central to medial,upper punctum,1.8,.9,.4,Reverse Hughes',Extended modified Reverse Hughes' Upper punctum?? involve?? sacrifie?. Upper tarsus 3/4 ???,poorly differentiated,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+173,33796244,2019,SGC,F,67,40.3,R,L,lateral,None,.7,.4,.3,Hughes',Modified Hughes, ,None,None,None,None,None,.00,1,None,none,none,>5,<10,1B,None
+174,33729324,2019,SGC,F,75,3.5,L,U,central,None,.9,.4,.3,Curtler-Beard, , ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+175,33926421,2019,SGC,F,68,40.9,L,L,lateral,None,.6,.5,.2,Hughes',Modified Hughes, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+176,34077174,2019,SGC,F,83,5.3,L,L,central to lateral,None,2.0,1.5,.8,Hughes',Modified Hughes, ,None,None,None,None,None,.00,2,None,none,none,>20,20 -- 30,S2,None
+177,33954684,2019,SGC,F,66,36.4,L,U,central,None,1.3,.6,.4,Reverse Hughes',Modified reversed Hughes', ,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+178,33066464,2019,SGC,F,81,17.1,L,L,central,None,1.4,.7,.7,Hughes',Modified Hughes,poorly differentiated,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,"meningioma, DLBCL"
+179,34021963,2019,SGC,F,82,38.6,L,L,lateral/ L canthus,None,.6,.2,.3,Hughes',Modified Hughes, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+180,34125944,2020,SGC,M,80,13.6,L,U,U,None,3.8,3.5,3.3,Exenteration,(total),Poorly differentiated,LN metas,None,intraorbital_LN,None,None,.00,2,None,none,none,>20,30 -- 40,3B,None
+181,31922971,2020,SGC,M,74,21.4,R,U,lateral,None,.6,.4,.3,TENZEL SEMICIRCULAR FLAP,Modified Tenzel, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+182,35050934,2020,SGC,F,90,2.7,L,U,central,None,1.5,1.1,.0,reconstruction(conjunctival closure), , ,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,None
+183,24186712,2020,SGC,F,47,31.1,R,U,medial,punctum involved,.5,.5,.4,TENZEL SEMICIRCULAR FLAP, , ,None,None,None,None,None,.00,2,None,positive margin,none,<5,<10,1A,None
+184,35003741,2020,SGC,M,64,28.7,L,U,central,None,.6,.3,.2,Reverse Hughes',Modified reversed Hughes', ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+186,36668581,2021,SGC,F,47,13.0,R,U,central,None,.6,.6,.4,sliding tarsoconjunctival flap,Sliding tarsal pedicle & direct musculo-cutaneous suturing, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+187,36593785,2021,SGC,M,87,4.2,L,L,medial,punctum involved?,1.9,1.4,1.4,TENZEL SEMICIRCULAR FLAP,Extensive Tenzel semicircular reconstruction, ,None,None,None,None,None,.00,1,None,none,none,>10,11 -- 20,1C,None
+188,26472490,2021,SGC,F,71,11.6,R,L,lateral,None,.7,.3,.1,Hughes',Modified Hughes, ,None,None,None,None,None,.00,2,None,none,none,>5,<10,1B,None
+189,33881375,2021,SGC,F,47,22.2,R,L,central to medial,None,1.5,.4,.2,Hughes',Modified Hughes,Sebaceous carcinoma with squamous differentiation,None,None,None,None,None,.00,2,None,none,none,>10,11 -- 20,1C,thyriod ca
+191,8037769,2012,M. MELANOMA,F,51,24.5,R,U,central,None,.5,.5,.2,Reverse Hughes',Modified reversed Hughes', ,LN metas,Rt parotid gland,None,"Ocular_Malig. melanoma, Rt. conjunctiva with Rt parotid & Rt level II LN recurrence",Yes,4.70,2,None,none,none,>4,<10,4,"Endometrial ca
+bone and lung metastasis"
+193,10081450,2009,BCC,F,84,.3,R,L,lateral,None,.3,.2,.0,DIRECT CLOSURE, ,"Basal cell carcinoma, nodular type",None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+194,21718844,2009,SGC,F,75,73.4,R,U,central,None,1.1,.8,.5,Curtler-Beard, ,"Sebaceous carcinoma, poorly differentiated",None,None,None,None,None,.00,1,None,none,none,>10,11 -- 20,1C,None
+195,22057384,2010,BCC,F,71,37.7,L,L,central,None,.5,.4,.0,Hughes',Modified Hughes,Basal cell carcinoma,None,None,None,None,None,.00,2,None,none,none,<5,<10,1A,None
+196,23765695,2011,OTHER,M,48,54.1,L,U,lateral,None,.0,.0,.0,DIRECT CLOSURE, ,Mucinous eccrine carcinoma,None,None,None,None,None,.00,2,None,none,none,<5,<10,-999,None
