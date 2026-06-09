@@ -8,7 +8,8 @@
 
 ## 실행 문서
 - **M0 셋업·baseline**: [`M0_setup.md`](M0_setup.md) — STATE 설치 + PDS 재현 + ⚠️라이선스(noncommercial) 전략
-- **M1 데이터셋 카탈로그**: [`01_datasets.md`](01_datasets.md) — 공개 TED/안와 scRNA-seq 후보 + 임상 앵커 매핑
+- **M1 데이터셋 카탈로그**: [`01_datasets.md`](01_datasets.md) — 공개 TED/안와 scRNA-seq 후보 + 보유 데이터의 정직한 역할
+- **M1 엔드포인트 정의**: [`02_endpoints.md`](02_endpoints.md) — 문헌 기반 임상/분자 엔드포인트 (우리 데이터로 정의 X)
 
 ## 핵심 원칙 — 따라가지 말고 올라타라
 - ❌ 범용 FM 재학습 (컴퓨팅에서 진다)

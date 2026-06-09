@@ -23,15 +23,16 @@
 
 > 리뷰 길잡이: "Single-cell transcriptomics in thyroid eye disease" (PMC11717346, 2025) — 데이터셋 총정리. 접근해 GSE 목록 확정에 사용.
 
-## 보유 임상데이터 → 엔진 결과 앵커 매핑
-엔진(공개 scRNA-seq 학습)이 **예측해야 할 임상 표현형**을 우리 데이터가 정의·검증한다.
+## 보유 임상데이터의 정직한 역할 (2026-06-09 수정)
+> ⚠️ **엔드포인트를 우리 데이터로 "정의"하지 않는다.** 41명·단일기관·flow·결측 = power 부족 + selection bias.
+> 엔드포인트 정의는 **문헌/분야 합의**에서 가져온다 → `02_endpoints.md`.
 
-| 보유 데이터 | 제공 앵커(라벨) | 엔진에서의 역할 |
+| 보유 데이터 | ❌ 하지 않을 것 | ✅ 정직한 역할 |
 |---|---|---|
-| `Fibrocytes`(41명, FibroT1/TSHRT1/IGFT1) | fibrocyte %·마커 발현 ↔ CAS | 분자 상태 → fibrocyte 부하 검증 |
-| `TRAb in GD`(403, imp/adj 시계열) | 자가항체 동역학(TSHR축) | perturbation 강도 ↔ 활성도 |
-| `TED_Dys`(330, 지질·NLR·CAS) | 전신 염증/대사 표현형 | 환자 계층화·외적타당도 |
-| `TED_Diplopia`,`TED_Calculator` | 감압술/복시, ROC 라벨 | 임상 엔드포인트 정의 |
+| `Fibrocytes`(41) | fibrocyte cutoff 정의 | pilot/illustrative, 가설 생성 |
+| `TRAb in GD`(403) | 자가항체-활성 정의 | 시계열 패턴 참고(가장 큰 n) |
+| `TED_Dys`(330) | 계층화 기준 정의 | 환자 분포 감각, 소규모 calibration |
+| 전체 | 통계적 엔드포인트 근거 | **진짜 자산은 2027 wet lab 자체 scRNA-seq** |
 
 ## 다음 행동 (M1 실행 순서)
 1. D1(Li 2022) GSE 확정 → 다운로드 → scanpy 로드 → QC → fibroblast subset 추출
