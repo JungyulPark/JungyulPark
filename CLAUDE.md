@@ -34,15 +34,22 @@ Dr. Insight / Fact Insight 자동화 파이프라인. **본업 시간을 잠식�
 
 ## 2. 집중 기술 스택 (이 레포의 작업 초점)
 
-사용자가 명시적으로 집중하는 3가지. 작업·코드·노트는 이 축을 우선한다.
+### 통합 논제 (The One Thesis) — 2026 확정
+> **오픈 virtual cell 파운데이션 모델(Arc STATE · CZI VCP · rBio) 위에,
+> TED/안와 섬유화 특화 TGFβ1 perturbation 레이어를 얹어,
+> force-state-selective TGFβ1 binder를 in silico로 설계·검증하는 질환특화 엔진을 만든다.**
 
-| 초점 | 무엇 | 메인 트랙과의 연결 |
+사용자가 집중하는 3축은 **이 한 문장으로 수렴**한다. 따라가지 말고(범용 FM 재학습 X) 올라탄다(오픈 모델을 인프라로).
+해자(moat) = 컴퓨팅이 아니라 **독점 임상 데이터(Fibrocytes/TED/TRAb) + IP + 질환 전문성**.
+
+| 초점 (폴더) | 역할 | 통합 미션에서의 위치 |
 |---|---|---|
-| **RF diffusion** | RFdiffusion 기반 de novo 단백질/binder 설계 (Baker lab) | TGFβ1 force-state-selective binder 후보 생성 → 1순위 핵심 엔진 |
-| **Virtual Cell Challenge** | Arc Institute Virtual Cell Challenge (perturbation/세포상태 예측) | 세포 모델링 역량 + 데이터 자산화 + academic credibility(土) |
-| **Virtual Cell project** | 가상세포 모델링 (질환 특화 데이터 엔진 방향) | 제약사·의료기기사 협업 가능한 데이터 플랫폼 후보 |
+| **RF diffusion** (`RFdiffusion_TGFb1/`) | binder 분자 **생성** (RFdiffusion→ProteinMPNN→AF) | GATE 1 — 후보 생성 엔진 |
+| **Virtual Cell project** (`VirtualCell_TGFb1/`) | binder 효과 **예측** (질환특화 perturbation) | GATE 2 — in silico 검증 |
+| **Virtual Cell Challenge** (`VirtualCellChallenge/`) | 모델링 역량 **검증** + credibility(土) | 벤치마크·논문·신뢰 |
 
-> 새 폴더를 만들 때는 위 3축 또는 메인 미션에 매핑되는지 먼저 확인한다. (예: `RFdiffusion_TGFb1/`, `VirtualCellChallenge/`, `VirtualCell/`)
+> 전략 실행 레이어: `00_STRATEGY/` (2026_focus_plan.md · virtual_cell_landscape.md · roadmap_tracker.md).
+> 새 폴더는 위 통합 논제를 강화하는지 먼저 확인한다. 강화 못 하면 만들지 않는다.
 
 ---
 
