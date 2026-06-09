@@ -1,0 +1,33 @@
+# Curated core panels v0 — 안와 TGFβ/섬유화 엔진 엔드포인트
+# 정직성: 핵심 마커만. 런타임에 MSigDB 표준셋과 교집합/보강 후 v1 동결 권장.
+# 사용: sc.tl.score_genes(adata, genes, score_name=...)
+version: v0
+species: human
+note: >
+  완전한 통계 시그니처 아님(curated core). 표준 DB(HALLMARK_TGF_BETA_SIGNALING,
+  NABA_MATRISOME, HALLMARK_ADIPOGENESIS, HALLMARK_INFLAMMATORY_RESPONSE)로 보강 후 동결.
+
+signatures:
+  tgfb_signaling:
+    desc: "TGFβ 정준 신호 활성 (binder 작용의 직접 readout) ★"
+    augment_with: MSigDB HALLMARK_TGF_BETA_SIGNALING
+    genes: [SERPINE1, CTGF, CCN2, TGFBI, SMAD7, SKIL, JUNB, ID1, SERPINE2, THBS1, TGFB1, SMAD3]
+
+  myofibroblast:
+    desc: "Myofibroblast 분화 (TGFβ 핵심 하류) ★"
+    genes: [ACTA2, TAGLN, POSTN, CNN1, MYL9, TPM1, TPM2, FN1]
+
+  ecm_fibrosis:
+    desc: "ECM 침착/섬유화 (안와 섬유화 표현형) ★"
+    augment_with: MSigDB NABA_CORE_MATRISOME
+    genes: [COL1A1, COL1A2, COL3A1, COL5A1, COL6A1, FN1, LOX, SPARC, FBN1, DCN]
+
+  adipogenesis_lipofibroblast:
+    desc: "지방생성/lipofibroblast (TAO; RASD1 — Li 2022)"
+    augment_with: MSigDB HALLMARK_ADIPOGENESIS
+    genes: [PPARG, FABP4, ADIPOQ, CEBPA, LPL, PLIN1, RASD1, CIDEC]
+
+  inflammation_active:
+    desc: "활성기 염증 (CAS 활성축)"
+    augment_with: MSigDB HALLMARK_INFLAMMATORY_RESPONSE
+    genes: [IFNG, IL6, CXCL8, CXCL9, CXCL10, TNF, IL1B, CCL2]
