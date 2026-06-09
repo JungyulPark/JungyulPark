@@ -63,6 +63,14 @@
 - **CZI VCP / rBio / GREmLN** — virtualcellmodels.cziscience.com
 - scanpy, anndata, scvi-tools / 평가: PDS
 
+## 데이터 현실 (2026-06-09 점검 완료 — 중요)
+- ⚠️ **보유 임상데이터는 단일세포 전사체가 아니다.** 전부 환자 단위 임상·유세포분석(flow cytometry) 표 데이터:
+  - `Fibrocytes` 41명×44열(FibroT1/TSHRT1/IGFT1 등 마커 %), `TRAb in GD` 403행(자가항체 시계열), `TED_Dys` 330명×48열(임상·지질).
+- → STATE/VCP(단일세포 발현 perturbation 모델)에 **직접 학습/파인튜닝 불가.**
+- ✅ **그래도 길은 열려 있다** (PubMed 확인: TED/안와 fibroblast scRNA-seq 공개 데이터 다수):
+  - **2026 경로**: 공개 TED/안와 단일세포 데이터로 STATE 기반 엔진 구축 + **보유 임상데이터를 "임상 결과 앵커/검증 라벨"로 결합**(CAS·TRAb·치료반응). ← 거인이 못 가진 임상-분자 브리지.
+  - **2027 해자**: wet lab에서 **자체 안와 fibroblast/fibrocyte TGFβ perturbation scRNA-seq 생산** = 대체 불가 자산.
+
 ## 정직한 리스크
-- 보유 데이터가 **단일세포(scRNA-seq)인지** 확인 필요. bulk/임상지표뿐이면 perturbation 모델 직접 학습은 제한 → 공개 단일세포 + 우리 라벨 결합 전략으로 전환.
 - 엔진은 후보를 **좁힐 뿐 증명하지 않는다.** 최종 검증은 wet lab(2027~).
+- 공개 단일세포 데이터의 배치효과·라벨 정합성 관리 필요.
