@@ -6,6 +6,10 @@
 ## 한 문장
 오픈 virtual cell 모델(Arc STATE, CZI VCP)을 **인프라로 깔고**, TED/안와 섬유화 특화 **TGFβ perturbation 레이어**를 얹어, 거인이 못 가는 질환 vertical을 독점하는 엔진을 만든다.
 
+## 실행 문서
+- **M0 셋업·baseline**: [`M0_setup.md`](M0_setup.md) — STATE 설치 + PDS 재현 + ⚠️라이선스(noncommercial) 전략
+- **M1 데이터셋 카탈로그**: [`01_datasets.md`](01_datasets.md) — 공개 TED/안와 scRNA-seq 후보 + 임상 앵커 매핑
+
 ## 핵심 원칙 — 따라가지 말고 올라타라
 - ❌ 범용 FM 재학습 (컴퓨팅에서 진다)
 - ✅ STATE/VCP를 fine-tune·프롬프트·벤치마크로 사용, **질환특화 데이터·IP로 차별화**
