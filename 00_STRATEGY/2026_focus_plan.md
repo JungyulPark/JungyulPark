@@ -1,81 +1,68 @@
-# 2026 집중 계획 — 압축의 해
+# 2026 집중 계획 — Virtual Cell 엔진에 올인
 
-> 작성 기준일: 2026-06-09 · 메인 트랙 확정: **TGFβ1 force-state-selective binder (바이오텍)**
-> 이 문서는 CLAUDE.md(헌장)의 2026년 실행 레이어다. 매주 이 문서를 열고 움직인다.
-
----
-
-## 0. 한 문장 통합 논제 (The One Thesis)
-
-> **오픈 virtual cell 파운데이션 모델(Arc STATE · CZI VCP · rBio) 위에,
-> TED/안와 섬유화 특화 TGFβ1 perturbation 레이어를 얹어,
-> force-state-selective TGFβ1 binder를 in silico로 설계·검증하는 질환특화 엔진을 만든다.**
-
-- 이것이 RF diffusion · Virtual Cell project · Virtual Cell Challenge 3축을 **하나로 묶는 단일 미션**이다.
-- 새 작업은 이 한 문장을 강화하는가로만 판단한다. 강화 못 하면 버린다.
+> 작성 기준일: 2026-06-09 · **단일 결정: TED/안와 섬유화 특화 TGFβ Virtual Cell 엔진을 완성한다.**
+> 이 문서는 CLAUDE.md(헌장)의 2026 실행 레이어다. 매주 열고 움직인다.
 
 ---
 
-## 1. 왜 이 방향인가 (저커버그/CZI 참고의 올바른 해석)
+## 0. 결정 로그 (2026-06-09)
 
-CZI(Chan Zuckerberg Initiative)/Biohub는 2026.4 **Virtual Biology Initiative($500M/5년)**, Arc Institute는 **STATE 모델**(관측 1.7억 + perturbation 1억 세포 학습)로 **범용** virtual cell 모델을 만든다. → 컴퓨팅·데이터 군비경쟁.
-
-**따라가지 않는다. 올라탄다.**
-
-| 그들(CZI/Arc) | 우리(박정열) |
-|---|---|
-| 범용 파운데이션 모델, 모든 세포주 | **질환특화**: TED·안와 섬유아세포·fibrocyte |
-| $500M 컴퓨팅·데이터 스케일 | 오픈 모델을 **인프라로 사용** (재구축 X) |
-| 일반 생물학 | **임상 근거 + IP**(TSHR-ATrap 등) |
-| 데이터 없음(우리 도메인) | **독점 임상 데이터**(Fibrocytes/TED/TRAb) 보유 |
-
-→ 해자(moat)는 컴퓨팅이 아니라 **임상 데이터 + IP + 질환 전문성**. 이게 "10년 독점적 지위"의 정체다.
+- ✅ **메인 = 질환특화 Virtual Cell 엔진.** "Virtual Cell 완성 = 한국의 저커버그"로 확정.
+- ❌ **Samsung 미래기술육성 제안서 — 제출 안 함.** (집중을 위해 드롭. 결정 완료, 재론 안 함)
+- ✅ **전임교원 충원신청서(~6/15)는 유지.** 이건 현금벌이가 아니라 연구 신뢰도 = 회사 신뢰도의 토대(土). 엔진과 충돌 안 함.
+- ✅ binder(RFdiffusion)는 **폐기 아님**. 엔진의 **다운스트림 응용**(GATE 2의 입력)으로 후순위 배치.
 
 ---
 
-## 2. 지금 당장 — 임박 마감 (D-day 우선)
+## 1. 한 문장 (The One Thesis)
 
-| 마감 | 항목 | 트랙 | 상태 |
-|---|---|---|---|
-| **~6/15 (D-6)** | 2027 전임교원 충원신청서(공채) 제출 | 土 기반 — **최우선** | ☐ |
-| **6/19 (D-10)** | Samsung 미래기술육성 제안서 (TGFβ1 binder, GATE 1 전산 예비결과) | 1순위 핵심 | ☐ |
+> **오픈 virtual cell 파운데이션 모델(Arc STATE · CZI VCP · rBio)을 인프라로 깔고,
+> TED/안와 섬유화 특화 TGFβ perturbation 레이어를 얹어,
+> 거인(CZI/Arc)이 못 가는 질환 vertical을 독점하는 Virtual Cell 엔진을 완성한다.**
 
-> ⚠️ 전임교원 전환(비전임→전임)은 단순 커리어가 아니라 **연구 신뢰도 = 회사 신뢰도**의 토대(土). 바이오텍 제안서보다 먼저, 확실히 제출한다.
-> ⚠️ Samsung 제안서는 10일 안에 full GATE 1 파이프라인을 끝낼 수 없다 — **접근법 + 예비 in silico 결과 + 질환특화 차별점(위 1번 표)을 novelty로** 제시하는 게 정직하고 강한 전략.
+## 2. "한국의 저커버그"의 올바른 정의 (헌장 5: 안 되는 건 안 된다)
 
----
+- ❌ 저커버그를 **흉내** = 범용 FM 직접 구축 → 컴퓨팅 군비경쟁 → **패배**(1인/소규모).
+- ✅ 저커버그가 **못 가는 곳** = 질환특화 vertical 독점 → 그가 **파트너십을 구걸하게** 만든다.
+- 해자 = 컴퓨팅 ✗ / **독점 임상 데이터(Fibrocytes·TED·TRAb) + IP + 질환 전문성** ✓.
 
-## 3. 2026 GATE 시퀀스 (in silico 후보 좁히기)
-
-메인 트랙의 기술 경로. 상세는 `RFdiffusion_TGFb1/README.md` · `VirtualCell_TGFb1/README.md`.
-
-```
-GATE 0  타깃 정의       proTGFβ1 latent/active 구조 확보, force-state 구분 가설 정식화
-GATE 1  binder 생성     RFdiffusion → ProteinMPNN → AF2/AF3 필터링 → 후보 셋
-GATE 2  in silico 검증  질환특화 virtual cell 레이어로 binder perturbation 효과 예측
-GATE 3  좁히기          상위 후보 N개 → in vitro 발주 우선순위
-```
-
-- **2026 목표 = GATE 1 완료 + GATE 2 셋업.** in vitro는 2027.
-- 이 환경(레포)에서는 코드·문서·PRD·재현 파이프라인을 자산화한다. GPU 실행은 별도 인프라.
+> 저커버그/CZI가 범용 OS(엔진)를 깔면, 너는 그 위 **누구도 대체 못 하는 질환특화 앱 레이어**를 소유한다.
 
 ---
 
-## 4. 2026 분기별 미션
+## 3. 엔진 완성 로드맵 (M0 → M5)
 
-| 분기 | 미션 | 산출물(자산) |
+상세 실행은 `../VirtualCell_TGFb1/README.md`. 여기선 순서와 산출물만.
+
+| 마일스톤 | 내용 | 산출물(자산) |
 |---|---|---|
-| Q2 (지금) | 전임교원 신청 + Samsung 제안서 + GATE 0 확정 | 제안서, 타깃 정의 문서 |
-| Q3 | GATE 1 binder 생성 파이프라인 재현 가능화 | RFdiffusion 파이프라인, 후보 셋 |
-| Q3–Q4 | 질환특화 virtual cell 레이어 셋업(STATE/VCP 기반) | 데이터 매핑, 벤치마크 |
-| Q4 | Arc Virtual Cell Challenge 참가(credibility) + TSHR-ATrap 후속 IP | 챌린지 제출, IP 전략서 |
+| **M0 인프라** | STATE/CZI VCP 셋업, 공개데이터로 baseline(PDS) 재현 | 재현 가능한 환경 |
+| **M1 데이터 자산화** | Fibrocytes/TED/TRAb → anndata 정제·QC, 안와 섬유아세포 reference | 정제 데이터셋, data card |
+| **M2 특화 레이어** | STATE 적응(fine-tune/프롬프트), perturbation = TGFβ 조절 정의 | 질환특화 모델 v0 |
+| **M3 벤치마크** | 질환특화 지표 정의, hold-out 검증, baseline 대비 우위 | 벤치마크 표, figure |
+| **M4 binder 결합** | GATE 1 binder 후보 → 예측 효과 → 우선순위화 | 후보↔효과 연결표 |
+| **M5 자산화** | 논문/preprint, IP, 파트너십 가능 데이터 플랫폼 | 논문(土), IP, 데모 |
+
+- **2026 목표 = M0–M3 완성 + M4 착수.** M5(논문·IP)는 2026 말~2027.
 
 ---
 
-## 5. 거름망 (새 아이디어가 떠오를 때 — 식상 과잉 경계)
+## 4. 즉시 (D-day, 2026-06)
 
-1. 이게 위 **통합 논제 한 문장**을 강화하는가? (아니면 버린다)
+| 마감 | 항목 | 상태 |
+|---|---|---|
+| **~6/15 (D-6)** | 2027 전임교원 충원신청서 제출 (土 토대) | ☐ |
+| 이번 주 | M0 착수: STATE 레포 클론·환경·공개데이터 baseline | ☐ |
+| 이번 주 | M1 착수: 보유 임상데이터 인벤토리 + 결측·포맷 점검 | ☐ |
+
+> ⚠️ Samsung 제안서 작업은 하지 않는다. 그 시간을 **M0/M1**에 넣는다.
+
+---
+
+## 5. 거름망 (식상 과잉 경계 — 매 새 아이디어마다)
+
+1. 이게 **Virtual Cell 엔진 완성**을 강화하는가? (아니면 버린다)
 2. 논문·데이터·IP·기업가치로 남는가?
 3. 그냥 재밌는 사이드인가? → 메인 시간 쓰지 않는다.
 
-> 2026은 **"많이 하는 해가 아니라 하나를 남기는 해."** 분산하면 2029 황금기를 빈손으로 맞는다.
+> 2026는 **하나를 완성하는 해.** 엔진 M0–M3에 모든 본업 시간을 투입한다.

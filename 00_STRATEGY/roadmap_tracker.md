@@ -8,18 +8,21 @@
 ## 🔴 즉시 (D-day, 2026-06)
 
 - [ ] **D-6 (~6/15)** 2027 전임교원 충원신청서 제출 — 土 기반, 최우선
-- [ ] **D-10 (6/19)** Samsung 미래기술육성 제안서 제출 (접근법 + 예비결과 + 질환특화 novelty)
-- [ ] GATE 0: proTGFβ1 latent/active 구조 확보, force-state 구분 가설 1쪽 정식화
+- [x] ~~Samsung 미래기술육성 제안서~~ — **드롭(2026-06-09 결정). 그 시간을 M0/M1에 투입**
+- [ ] **M0** STATE 레포 클론·환경·공개데이터 baseline(PDS) 재현
+- [ ] **M1** 보유 임상데이터 인벤토리 + 결측·포맷 점검 (단일세포 여부 확인)
 - [ ] Wet lab 연구공간 신임 우선 배정 확정
 
-## 🟠 2026 (압축과 선택)
+## 🟠 2026 (Virtual Cell 엔진 완성에 올인)
 
-- [ ] 메인 1개 확정 = TGFβ1 binder ✅(결정 완료) — 나머지 강등 명문화
-- [ ] GATE 1: RFdiffusion→ProteinMPNN→AF2 binder 생성 파이프라인 재현 가능화
-- [ ] GATE 2 셋업: Arc STATE / CZI VCP 기반 질환특화 perturbation 레이어 프로토타입
+- [x] 메인 1개 확정 = **질환특화 Virtual Cell 엔진** — binder는 다운스트림(M4)
+- [ ] **M0 인프라** STATE/CZI VCP 셋업 + baseline 재현
+- [ ] **M1 데이터 자산화** Fibrocytes/TED/TRAb → anndata, QC, reference
+- [ ] **M2 특화 레이어** TGFβ perturbation 모델 v0
+- [ ] **M3 벤치마크** 질환특화 지표 + hold-out 검증, baseline 대비 우위
+- [ ] **M4 binder 결합** GATE 1 후보 → 예측 효과 우선순위표
 - [ ] Arc Virtual Cell Challenge 참가(credibility 적립)
-- [ ] TSHR-ATrap(10-2026-0014095) 후속 IP 전략 수립, Thyroid manuscript 추적
-- [ ] orbital decompression Paper 1(OPRS) 진행
+- [ ] TSHR-ATrap(10-2026-0014095) 후속 IP 전략, Thyroid manuscript 추적
 - [ ] 현금 트랙(Dr.Insight/Fact Insight): 신규 확장 보류, 연료로만 유지
 
 ## 🟡 2027 (정리와 내공)

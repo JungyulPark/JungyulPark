@@ -19,10 +19,12 @@
 
 이 저장소가 완성을 향해 가는 프로젝트는 **단 하나의 전문기술 사업**으로 압축된다.
 
-### 1순위 — TGFβ1 바이오텍 (★★★, 1000억 가능성 가장 현실적)
-**Force-state-selective TGFβ1 binder** 설계. 잠재형(latent) proTGFβ1과 활성형을 force-state에 따라 선택적으로 구분/포획하는 단백질 결합체.
-- 핵심 자산: `LTGFB1_LATENT_TRAP` (PRD v2.x), `TSHR-ATrap` 가출원(10-2026-0014095)
-- 검증 경로: **in silico 후보 좁히기 → in vitro → in vivo POC**
+### 1순위 — 질환특화 Virtual Cell 엔진 + TGFβ1 바이오텍 (★★★, 2026-06-09 올인 확정)
+**TED/안와 섬유화 특화 Virtual Cell 엔진**이 메인 산출물. 오픈 FM(Arc STATE·CZI VCP) 위에 TGFβ perturbation 레이어를 얹어, **force-state-selective TGFβ1 binder**(latent/active proTGFβ1 구분 포획) 설계·검증의 in silico 엔진을 완성한다.
+- "한국의 저커버그" = 범용 FM 흉내 ✗ → 거인이 못 가는 **질환 vertical 독점** ✓.
+- 핵심 자산: 엔진 + 독점 임상데이터(Fibrocytes/TED/TRAb), `LTGFB1_LATENT_TRAP`(PRD v2.x), `TSHR-ATrap` 가출원(10-2026-0014095)
+- 검증 경로: **엔진(M0–M3) → binder 결합(M4) → in vitro → in vivo POC**
+- ❌ 드롭(2026-06-09): Samsung 미래기술육성 제안서 — 집중을 위해 제출 안 함.
 
 ### 2순위 — 안과 AI simulation / SaaS (★★)
 다기관 임상 PoC 도구, surgeon/patient 상담 플랫폼. TED·orbital decompression 등 기존 임상 데이터 기반.
