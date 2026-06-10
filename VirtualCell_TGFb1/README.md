@@ -10,6 +10,8 @@
 - **M0 셋업·baseline**: [`M0_setup.md`](M0_setup.md) — STATE 설치 + PDS 재현 + ⚠️라이선스(noncommercial) 전략
 - **M1 데이터셋 카탈로그**: [`01_datasets.md`](01_datasets.md) — 공개 TED/안와 scRNA-seq 후보 + 보유 데이터의 정직한 역할
 - **M1 엔드포인트 정의**: [`02_endpoints.md`](02_endpoints.md) — 문헌 기반 임상/분자 엔드포인트 (우리 데이터로 정의 X)
+- **M1 데이터 획득**: [`03_data_access.md`](03_data_access.md) — h5ad 확보 경로(CELLxGENE/GEO/GSA) + 통제접근 주의
+- **probe/도구**: [`scripts/`](scripts/) — `probe_signatures.py`(go/no-go), `fetch_geo_supp.py`, `signatures/`
 
 ## 핵심 원칙 — 따라가지 말고 올라타라
 - ❌ 범용 FM 재학습 (컴퓨팅에서 진다)

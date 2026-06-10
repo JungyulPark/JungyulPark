@@ -1,5 +1,12 @@
 # scripts/ — 로컬 실행 (RTX 3070)
 
+## fetch_geo_supp.py — GEO supplementary 다운로드 (로컬)
+```bash
+python fetch_geo_supp.py GSE308553                       # 파일 목록
+python fetch_geo_supp.py GSE308553 --download -o ../data/GSE308553
+```
+데이터 획득 전체 전략은 [`../03_data_access.md`](../03_data_access.md) 참조 (Route A: CELLxGENE 권장).
+
 ## probe_signatures.py — go/no-go 검증 (파이프라인 아님)
 시그니처 점수가 공개 안와 scRNA-seq에서 **TAO vs 대조를 분리하는지** 단 하나만 검정.
 
