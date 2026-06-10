@@ -6,13 +6,11 @@
 
 ## 경로 우선순위 (저항 적은 순)
 
-### Route A ★권장 — CZI CELLxGENE Discover (즉시 h5ad)
-- 왜: **표준 스키마** h5ad. obs에 `disease`, `cell_type`, `tissue` 온톨로지 필드가 이미 있어
-  probe의 `--condition-col disease --celltype-col cell_type` 가 **거의 그대로 동작**.
-- 방법: <https://cellxgene.cziscience.com/datasets> 에서 `thyroid` / `orbit` / `Graves` 검색
-  → 있으면 Download 버튼 → **h5ad(AnnData)** 선택.
-- 프로그램 접근: `cellxgene-census` (Python) 또는 `cellxgenedp` (R).
-- 한계: TED 전용 데이터가 큐레이션돼 있지 않을 수 있음 → 없으면 Route B.
+### Route A — CZI CELLxGENE Discover ❌ TED 없음 (2026-06 확인)
+- 전체 2126개 데이터셋 확인 결과 **TED/안와(orbital)/Graves orbitopathy 0건.**
+- 눈 데이터는 전부 다른 조직: 망막·각막·시신경·섬유주·RPE/맥락막·안표면 등. **안와 지방/섬유아세포 없음.**
+- API로 재확인: `scripts/search_cellxgene.py` (`pip install cellxgene-census`).
+- → **TED엔 막다른 길.** Route C(GEO)로 직행. (CELLxGENE는 섬유화 *참조군*(폐/피부 fibroblast) 확보용으로만 보조 활용 가능)
 
 ### Route B — GEO 개방 processed matrix
 - 대상 예: **GSE308553** (안와조직 transcriptome 2025, Sci Rep) 등 GEO 기탁분.
