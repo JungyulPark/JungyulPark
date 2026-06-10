@@ -64,5 +64,5 @@ graph TD
 1. **임상 그룹핑 기반 검정:**
    - 임상 데이터의 `CASscore >= 3` (Active) vs `CASscore < 3` (Inactive) 환자군에서 전신 염증(`NLR`) 및 피브로사이트 분율(`FibroT1`)의 통계적 차이를 확인합니다.
    - 이 차이가 scRNA-seq 상의 `inflammation_active` 및 `tgfb_signaling` 점수 분포 차이(MWU Test Effect Size)와 경향성(Directionality) 면에서 일치하는지 모니터링합니다.
-2. **시뮬레이션 교정:**
-   - in silico 시뮬레이션 엔진이 예측하는 fibroblast-to-myofibroblast 전이 확률은 `Fibrocytes ver1.02.csv` 코호트의 `CD4534Col1` 피브로사이트 분포를 경계 조건(boundary conditions)으로 사용하여 최종 튜닝됩니다.
+2. **시뮬레이션 예시적 교정 (Illustrative Calibration):**
+   - in silico 시뮬레이션 엔진이 예측하는 fibroblast-to-myofibroblast 전이 확률은 `Fibrocytes ver1.02.csv` 코호트의 `CD4534Col1` 피브로사이트 분포를 하드웨어적인 경계 조건(boundary conditions)으로 직접 주입하여 엔진을 하드 튜닝하는 대신, 외부에서 결과 분포의 경향성을 시각적으로 대조하고 검정하는 독립적인 예시적 교정(illustrative calibration) 모델로만 활용합니다. 이는 소규모 임상 코호트의 선택 편향(selection bias)이 핵심 시뮬레이션 물리 엔진 내부로 누수되어 하드코딩되는 것을 철저히 경계하기 위함입니다 (헌장: bias 누수 경계).
