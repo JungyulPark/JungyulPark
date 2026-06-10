@@ -18,18 +18,31 @@
   → `scripts/fetch_geo_supp.py` 또는 수동 → scanpy 로드.
 - 장점: 대개 **즉시 개방**(신청 불필요).
 
-### Route C — Li 2022 (Cell Rep Med) 원본
-- ⚠️ 중국 그룹 → raw human scRNA-seq는 **GSA(NGDC, China) 통제접근**(HRA…)일 공산.
-  raw는 데이터접근 신청+기관승인 필요(시간 소요). **processed matrix는 개방**일 수 있음.
-- 정확 접근번호 확인(당신이 1분):
-  1. PMC 전문 <https://pmc.ncbi.nlm.nih.gov/articles/PMC9418739/> → **"Data and code availability"** 절.
-  2. 거기 적힌 GSE… / HRA… / CRA… / Zenodo DOI 를 그대로 사용.
-  3. GSA면 개방(processed)/통제(raw) 구분 확인 후, 개방분 우선.
+### Route C — GSA (China National Center for Bioinformation) 수동/요청 확보
+- **Li et al. 2022 (Cell Rep Med) — [HRA000870](https://ngdc.cncb.ac.cn/gsa-human/browse/HRA000870)** (BioProject: PRJCA005234)
+  - **상태:** **통제 접근 (Controlled Access)**
+  - **경로:** 데이터 접근 신청 및 기관 승인이 필수적입니다. 데이터 접근 위원회(DAC) ID: `HDAC000135`.
+  - **신청 링크:** [Request Data](https://ngdc.cncb.ac.cn/gsa-human/browse/request/HRA000870)
+  
+- **Ke et al. 2025 (Commun Biol) — [HRA007561](https://ngdc.cncb.ac.cn/gsa-human/browse/HRA007561)** (BioProject: PRJCA025456)
+  - **상태:** **공개 접근 (Open Access) - raw FASTQ 만 공개**
+  - **다운로드 경로:** 
+    - HTTP: `https://download.cncb.ac.cn/gsa-human/HRA007561/`
+    - FTP: `ftp://download.big.ac.cn/gsa-human/HRA007561/`
+  - **주의:** 100개 이상의 run 폴더(HRR1795807~HRR1795978)에 각 sample당 수십 GB의 raw FASTQ 파일이 들어있어, 전체 용량이 1TB를 넘습니다.
+  - **대안 (가장 권장):** 논문 Data Availability 선언에 따라 교신저자에게 직접 가공 완료된 Seurat/AnnData 매트릭스를 이메일로 요청합니다.
+    - 교신저자 이메일: `wups@mail2.sysu.edu.cn` (또는 `suwenru@mail.sysu.edu.cn`)
+    - 분석 코드 저장소: [liuzh295/Graves-ophthalmopathy](https://github.com/liuzh295/Graves-ophthalmopathy.git)
+
+### Route D — GEO (NCBI) 공개 scRNA-seq 데이터셋
+- **Wu et al. 2022 (Front Endocrinol) — [GSE194323](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194323)** (SuperSeries: GSE194324)
+  - **조직:** 안와 지방 조직 (Orbital adipose tissue) scRNA-seq (질환 TAO vs 대조군 HC)
+  - **상태:** **공개 다운로드 가능** (GSM5833506, GSM5833507 등)
 
 ## 권장 실행 순서
-1. **Route A 먼저 1분 검색** — 있으면 끝(가장 깨끗).
-2. 없으면 **Route B(GSE308553 등 GEO 개방분)**.
-3. Li 2022 원본이 꼭 필요하면 Route C로 접근번호 확인 + (필요시) 통제접근 신청 병행.
+1. **이메일 요청 병행:** HRA007561 및 HRA000870 교신저자에게 메일로 가공된 matrix (`.h5ad` 또는 `.rds`)를 요청합니다.
+2. **GSE194323 활용:** 즉시 분석 가능한 공개 GEO 데이터셋인 GSE194323의 processed matrix를 다운로드하여 1차 probe에 사용합니다.
+3. **가공 도구 활용:** 확보된 counts matrix를 `scripts/convert_gsa.py`를 통해 규격화된 `.h5ad`로 변환하여 분석에 투입합니다.
 
 ## 데이터 확보 후 (probe 연결)
 ```bash
