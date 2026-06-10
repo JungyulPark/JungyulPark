@@ -45,7 +45,12 @@
 - **⚠️ 핵심 설정 이슈(해결됨):**
   - `wandb/default.yaml` 없음 → configs에 직접 생성 (`mode: disabled, local_wandb_dir: /tmp/wandb`)
   - `control_pert` Hydra override 방식: `"data.kwargs.control_pert=<LABEL>"` (따옴표 필수)
-- **다음 단계:** M1 폐 fibroblast 데이터(`runs/lung_fibroblasts.h5ad`)를 STATE 입력 형식으로 전처리 → TGFβ perturbation 인코딩 → infer
+- **다음 단계 (게이트 질문 먼저):** ⚠️ 위 train은 **장난감 데이터 50-step = 배관 점검**일 뿐, 학습된 모델 아님.
+  진짜 다음은 **"STATE가 TGFβ perturbation을 표현할 수 있는가"** 를 먼저 확인:
+  1. 사전학습 STATE 체크포인트 확보(HuggingFace `arcinstitute/SE-600M` 등) — 장난감 모델 폐기.
+  2. 그 모델의 **perturbation 어휘에 TGFβ/사이토카인이 있는지** 확인.
+  3. 없으면(OOD) → STATE-tx는 TGFβ 레이어에 부적합 → STATE-**emb**(임베딩)만 FM으로 쓰고
+     TGFβ 반응은 실 ±TGFβ 데이터의 supervised delta로 학습(데이터 필요) 또는 GEARS/scGen 비교.
 - ⚠️ **정직한 리스크**: STATE 사전학습은 주로 *유전자/약물* perturbation. **TGFβ 리간드 자극은 OOD** 일 수 있음.
   - 완화: fine-tune(클라우드 GPU L4/A100) 또는 STATE를 임베딩/맥락용으로만 쓰고 perturbation은 GEARS/scGen 비교.
 - 검증: STATE 예측 처리군 vs 실제 처리군의 시그니처 점수 일치도.
@@ -62,7 +67,7 @@
 | 단계 | 상태 | 비고 |
 |---|---|---|
 | M2.1 TGFβ 실데이터 검증 | **종료** | 데이터 3회 시도 모두 설계 함정 또는 껍데기. 공개 ±TGFβ primary fibroblast scRNA 희소. |
-| M2.2 STATE 인프라 | **✅ 완료** | train+infer 동작 확인. 다음: M1 데이터로 실제 perturbation 적용. |
+| M2.2 STATE 인프라 | **배관 ✅ / 실모델 ❌** | 설치+train+infer가 장난감 데이터로 동작(=smoke test). 진짜 baseline·사전학습 모델·TGFβ 표현 가능성은 미확인. |
 | M2.3 TED 조건화 | 대기 | 저자 회신/wet lab 데이터 필요. |
 
 > 원칙: **M2.2 다음 단계 — M1 fibroblast 데이터로 STATE perturbation 적용**. TED(M2.3)는 데이터 대기.
