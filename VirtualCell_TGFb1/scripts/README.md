@@ -1,5 +1,17 @@
 # scripts/ — 로컬 실행 (RTX 3070)
 
+## 표준 파이프라인 (canonical) — 이 순서로 돈다
+| # | 스크립트 | 역할 |
+|---|---|---|
+| 1 | `search_cellxgene.py` / `fetch_geo_supp.py` | 데이터 탐색·획득 |
+| 2 | `extract_fibroblasts_background.py` | CELLxGENE 대용량에서 fibroblast subset만 추출(검증된 추출기) |
+| 3 | `update_local_var_names.py` | Ensembl ID → HGNC 심볼 매핑 |
+| 4 | `convert_gsa.py` | 표/10x → 규격 `.h5ad` 변환 |
+| 5 | `probe_signatures.py` | 시그니처 점수 + go/no-go 검정 |
+| — | `make_synthetic.py` / `test_pipeline.py` | 합성 데이터 검증(배관 점검) |
+
+> `archive/` = 탐색 중 생긴 잔재(미사용). 표준 경로는 위 표만.
+
 ## fetch_geo_supp.py — GEO supplementary 다운로드 (로컬)
 ```bash
 python fetch_geo_supp.py GSE308553                       # 파일 목록
