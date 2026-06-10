@@ -31,3 +31,44 @@
 ## 한계
 - **LUNG ILD ≠ TED.** 섬유화 생물학 일반 검증일 뿐. 질환특화(안와)는 TED 데이터로 별도 확인 필요.
 - 결과 CSV/데이터는 gitignore(용량) — 본 표가 보존 기록.
+
+---
+
+# M2.1 결과 · TGFβ 급성 처리 신호 검증 (2026-06-10)
+
+> **목표:** "만성 ILD에서 평탄했던 tgfb_signaling이 급성 TGFβ 처리 시 오르는가?" — M1 미해결 가설 직접 검증.
+> **데이터:** GEO GSE233063 — 인간 결장 fibroblast(CCD18co 세포주), **TGFβ처리 vs DMSO대조** scRNA-seq, 4,814세포 (Antigravity 다운로드·변환).
+> ⚠️ 결장 fibroblast ≠ 폐/안와 fibroblast — 섬유화 생물학 일반 비교.
+
+## 결과 (TGFβ_treated vs DMSO_control, Mann-Whitney)
+| 시그니처 | 매칭 | case_med | ctrl_med | effect | p | 판정 |
+|---|---|---|---|---|---|---|
+| **tgfb_signaling** | 11/12 | 0.328 | 0.357 | **-0.07** | 3.4e-05 | · 오히려 낮음 |
+| **myofibroblast** | 8/8 | 0.612 | 0.590 | +0.02 | 0.23 | · 변화 없음 |
+| **ecm_fibrosis** | 10/10 | 0.871 | 0.863 | -0.00 | 0.95 | · 변화 없음 |
+| adipogenesis_lipofibroblast | 4/8 | 0.002 | -0.012 | +0.07 | 9.4e-06 | · 미미 |
+| inflammation_active | 5/8 | -0.102 | -0.009 | **-0.11** | 8.5e-11 | · 하락 |
+
+**판정: NO-GO — 핵심 섬유화 프로그램이 분리되지 않음.**
+
+## 해석 (정직하게)
+
+**🔬 왜 tgfb_signaling이 안 올랐는가?**
+
+두 가지 경쟁 가설:
+
+1. **데이터 문제 (가능성 높음):** CCD18co는 결장 fibroblast 세포주. 피부/폐/안와 primary fibroblast와 TGFβ 반응성이 다를 수 있음. 세포주(cell line)는 반복 계대로 신호 반응이 무뎌짐.
+2. **시그니처 v0 문제:** 현재 tgfb_signaling 유전자 중 SERPINE1·CTGF(CCN2)·SMAD7·SKIL 등은 맥락 의존적. 결장 fibroblast에서 이 유전자들의 기저 발현 및 TGFβ 유도 패턴이 다를 수 있음.
+
+**💡 inflammation_active 하락(effect -0.11):** TGFβ의 면역억제 기능. TGFβ는 섬유화 유도와 동시에 염증 신호를 억제 — 이건 알려진 이중 역할이고 오히려 생물학적으로 타당.
+
+**→ 핵심 시사점:** 이번 NO-GO는 "시그니처 엔진이 틀렸다"가 아니라 **"결장 fibroblast 세포주는 적합하지 않은 맥락"** 이라는 신호. Primary fibroblast + in vitro TGFβ 처리 데이터 필요.
+
+## 다음 액션
+- [ ] **더 적합한 데이터 재탐색:** Primary 피부/폐/안와 fibroblast + TGFβ1 처리 in vitro scRNA-seq (GEO/ArrayExpress 추가 탐색).
+- [ ] **tgfb_signaling 시그니처 v1 업데이트:** CCN2(CTGF) 미매칭 확인. SMAD7/SKIL 음성피드백 유전자가 스코어를 희석하는지 점검. 단, 결과를 예쁘게 만들기 위한 p-hacking은 금지.
+- [ ] **M2.2 STATE 준비 병행:** 위 실데이터 확보 전까지 STATE 인프라(클론·baseline재현) 먼저.
+
+## 한계
+- CCD18co는 세포주이며 결장 유래 — TED/안와 맥락과 거리가 있음.
+- 결과 CSV는 gitignore(용량) — 본 표가 보존 기록.
