@@ -25,15 +25,29 @@
 
 ### M2.2 · STATE perturbation 예측 (핵심, 난이도↑)
 - 목적: 비처리 fibroblast + "TGFβ 자극" perturbation → STATE가 처리군 상태로의 이동을 예측하는가?
-- 실행:
+- **✅ 인프라 완료 (2026-06-10):**
+  ```bash
+  # 설치
+  pip install uv && uv tool install arc-state
+  # → state --help, state tx {train,predict,infer}, state emb {fit,transform,...} 동작 확인
+
+  # baseline train (50 steps, CPU, 예시 데이터)
+  state tx train \
+    data.kwargs.toml_config_path=... data.kwargs.embed_key=X_hvg \
+    data.kwargs.control_pert=TARGET1 training.max_steps=50 use_wandb=false ...
+  # → 101M 파라미터 LlamaBidirectional 모델 학습 완료, final.ckpt 저장
+
+  # inference
+  state tx infer --model-dir runs/state_baseline/baseline_test \
+    --adata .../random.h5ad --control-pert TARGET1 --output baseline_inferred.h5ad
+  # → 10,000세포 예측 완료 (controls 2077, treated 7923)
   ```
-  git clone https://github.com/ArcInstitute/state.git ; uv tool install -e .
-  state emb  ...   # 세포 임베딩
-  state tx   ...   # perturbation 예측
-  ```
-  공개 perturbation 데이터로 **baseline(PDS) 재현** 먼저(원래 M0 잔여) → 그다음 TGFβ.
-- ⚠️ **정직한 리스크**: STATE 사전학습은 주로 *유전자/약물* perturbation. **TGFβ 리간드 자극은 분포 밖(OOD)** 일 수 있음 → 예측이 빗나갈 수 있다.
-  - 완화: M2.1의 TGFβ 데이터로 **fine-tune(클라우드 GPU)** 또는 최소한 **검증**. 안 되면 STATE는 임베딩/맥락용으로만 쓰고 perturbation은 다른 방식(GEARS/scGen 비교) 검토.
+- **⚠️ 핵심 설정 이슈(해결됨):**
+  - `wandb/default.yaml` 없음 → configs에 직접 생성 (`mode: disabled, local_wandb_dir: /tmp/wandb`)
+  - `control_pert` Hydra override 방식: `"data.kwargs.control_pert=<LABEL>"` (따옴표 필수)
+- **다음 단계:** M1 폐 fibroblast 데이터(`runs/lung_fibroblasts.h5ad`)를 STATE 입력 형식으로 전처리 → TGFβ perturbation 인코딩 → infer
+- ⚠️ **정직한 리스크**: STATE 사전학습은 주로 *유전자/약물* perturbation. **TGFβ 리간드 자극은 OOD** 일 수 있음.
+  - 완화: fine-tune(클라우드 GPU L4/A100) 또는 STATE를 임베딩/맥락용으로만 쓰고 perturbation은 GEARS/scGen 비교.
 - 검증: STATE 예측 처리군 vs 실제 처리군의 시그니처 점수 일치도.
 
 ### M2.3 · TED 질환특화 조건화 (데이터 도착 후)
@@ -44,9 +58,13 @@
 - 3070(8GB): M2.1 전부 + STATE 추론 가능. STATE **학습/파인튜닝은 클라우드**(L4/A100, 현금트랙이 비용).
 - STATE noncommercial: 내부 R&D 자유, 상업화 시 라이선스 협의 or 자체모델 대체.
 
-## 이번 주 실행 순서 (Antigravity 위임 가능)
-1. **M2.1 데이터 1개 확보** (TGFβ 처리 fibroblast scRNA-seq, GSE 확정) → probe
-2. 결과: tgfb_signaling 급성 상승 확인 → `04_results.md`에 추가
-3. 병행: STATE 클론 + 공개데이터 baseline 재현 (M2.2 준비)
+## 실행 현황 (2026-06-10 기준)
+| 단계 | 상태 | 비고 |
+|---|---|---|
+| M2.1 TGFβ 실데이터 검증 | **종료** | 데이터 3회 시도 모두 설계 함정 또는 껍데기. 공개 ±TGFβ primary fibroblast scRNA 희소. |
+| M2.2 STATE 인프라 | **✅ 완료** | train+infer 동작 확인. 다음: M1 데이터로 실제 perturbation 적용. |
+| M2.3 TED 조건화 | 대기 | 저자 회신/wet lab 데이터 필요. |
 
-> 원칙: **M2.1(실데이터, 즉시 승리)부터.** STATE OOD 리스크가 큰 M2.2는 그다음. TED(M2.3)는 데이터 대기.
+> 원칙: **M2.2 다음 단계 — M1 fibroblast 데이터로 STATE perturbation 적용**. TED(M2.3)는 데이터 대기.
+
+
