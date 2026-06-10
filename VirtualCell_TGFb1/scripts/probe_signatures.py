@@ -96,8 +96,8 @@ def main():
             log(f"  경고 {name}: 표본 적음 case={len(x)} ctrl={len(y)}")
         try:
             u, p = mannwhitneyu(x, y, alternative="two-sided")
-            # rank-biserial effect size (방향+크기)
-            eff = 1 - (2 * u) / (len(x) * len(y))
+            # rank-biserial effect size: 양수 = 질환(case)에서 상승
+            eff = (2 * u) / (len(x) * len(y)) - 1
         except ValueError:
             p, eff = float("nan"), float("nan")
         results.append(dict(program=name, n_genes=len(present),

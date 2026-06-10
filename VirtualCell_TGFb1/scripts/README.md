@@ -10,6 +10,18 @@ python fetch_geo_supp.py GSE308553 --download -o ../data/GSE308553
 ## probe_signatures.py — go/no-go 검증 (파이프라인 아님)
 시그니처 점수가 공개 안와 scRNA-seq에서 **TAO vs 대조를 분리하는지** 단 하나만 검정.
 
+### ✅ 검증됨 (2026-06, 합성 데이터 smoke test)
+실데이터 없이 파이프라인 정확성 확인 완료:
+```bash
+python make_synthetic.py --out /tmp/on.h5ad  --signal on    # 섬유화 신호 주입
+python make_synthetic.py --out /tmp/off.h5ad --signal off   # 신호 없음
+python probe_signatures.py --h5ad /tmp/on.h5ad  --condition-col disease --case TAO --control Control --celltype-col cell_type --celltype-val Fibroblast --outdir /tmp/on
+python probe_signatures.py --h5ad /tmp/off.h5ad --condition-col disease --case TAO --control Control --celltype-col cell_type --celltype-val Fibroblast --outdir /tmp/off
+```
+- signal on → 핵심 섬유화 3프로그램 effect≈+1.0, p<1e-100 → **GO** (정상)
+- signal off → 전부 비유의 → **NO-GO** (위양성 0, 정상)
+- effect 부호: **양수 = 질환에서 상승**.
+
 ### 설치 (로컬, GPU 불필요)
 ```bash
 pip install scanpy scipy pyyaml matplotlib
