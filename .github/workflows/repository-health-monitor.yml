@@ -1,0 +1,35 @@
+name: Repository health monitor
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-health-monitor
+  cancel-in-progress: true
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Check every repository and highlight Autobot
+        env:
+          GH_TOKEN: ${{ secrets.ALL_REPOS_MONITOR_TOKEN || github.token }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: python scripts/monitor_github.py --output repository-health.md
+      - name: Add report to the run summary
+        run: cat repository-health.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: repository-health
+          path: repository-health.md
+          retention-days: 30
